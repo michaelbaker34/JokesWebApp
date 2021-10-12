@@ -7,16 +7,14 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New Joke</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.JokeQuestion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.JokeAnswer)
+                Joke
+                @*@Html.DisplayNameFor(model => model.JokeQuestion)*@
             </th>
             <th></th>
         </tr>
@@ -26,9 +24,6 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.JokeQuestion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.JokeAnswer)
             </td>
             <td>
                 <a asp-action="Details" asp-route-id="@item.Id">Punchline</a> |
